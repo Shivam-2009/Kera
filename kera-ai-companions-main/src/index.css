@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  /* Cyberpunk Dark (Default) */
+  :root, [data-theme="cyberpunk"] {
+    --background: 230 25% 7%;
+    --foreground: 180 100% 95%;
+    --card: 230 20% 11%;
+    --card-foreground: 180 60% 90%;
+    --popover: 230 20% 11%;
+    --popover-foreground: 180 60% 90%;
+    --primary: 180 100% 50%;
+    --primary-foreground: 230 25% 7%;
+    --secondary: 325 100% 55%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 230 15% 18%;
+    --muted-foreground: 220 10% 55%;
+    --accent: 280 80% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 80% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 230 15% 20%;
+    --input: 230 15% 15%;
+    --ring: 180 100% 50%;
+    --radius: 0.75rem;
+    --font-heading: 'Orbitron', monospace;
+    --font-body: 'Rajdhani', sans-serif;
+    --glow-primary: 0 0 20px hsla(180, 100%, 50%, 0.4);
+    --glow-secondary: 0 0 20px hsla(325, 100%, 55%, 0.4);
+    --card-glow: 0 0 30px hsla(180, 100%, 50%, 0.15);
+    --sidebar-background: 230 25% 7%;
+    --sidebar-foreground: 180 100% 95%;
+    --sidebar-primary: 180 100% 50%;
+    --sidebar-primary-foreground: 230 25% 7%;
+    --sidebar-accent: 230 15% 18%;
+    --sidebar-accent-foreground: 180 60% 90%;
+    --sidebar-border: 230 15% 20%;
+    --sidebar-ring: 180 100% 50%;
+  }
+
+  /* Midnight Blue */
+  [data-theme="midnight"] {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 96%;
+    --card: 222 40% 10%;
+    --card-foreground: 210 40% 96%;
+    --primary: 217 90% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 200 80% 45%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 222 30% 16%;
+    --muted-foreground: 215 20% 55%;
+    --accent: 250 70% 60%;
+    --accent-foreground: 0 0% 100%;
+    --border: 222 25% 18%;
+    --input: 222 25% 14%;
+    --ring: 217 90% 60%;
+    --glow-primary: 0 0 20px hsla(217, 90%, 60%, 0.35);
+    --glow-secondary: 0 0 20px hsla(200, 80%, 45%, 0.35);
+    --card-glow: 0 0 25px hsla(217, 90%, 60%, 0.12);
+    --font-heading: 'Inter', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  }
+
+  /* Sakura Pink */
+  [data-theme="sakura"] {
+    --background: 340 30% 96%;
+    --foreground: 340 40% 15%;
+    --card: 340 30% 99%;
+    --card-foreground: 340 40% 15%;
+    --primary: 340 75% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 320 60% 65%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 340 20% 92%;
+    --muted-foreground: 340 15% 50%;
+    --accent: 15 80% 60%;
+    --accent-foreground: 0 0% 100%;
+    --border: 340 20% 88%;
+    --input: 340 20% 94%;
+    --ring: 340 75% 55%;
+    --glow-primary: 0 0 20px hsla(340, 75%, 55%, 0.25);
+    --glow-secondary: 0 0 20px hsla(320, 60%, 65%, 0.25);
+    --card-glow: 0 0 20px hsla(340, 75%, 55%, 0.08);
+    --font-heading: 'Inter', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  }
+
+  /* Emerald Matrix */
+  [data-theme="matrix"] {
+    --background: 150 30% 5%;
+    --foreground: 140 80% 85%;
+    --card: 150 25% 9%;
+    --card-foreground: 140 60% 80%;
+    --primary: 145 90% 45%;
+    --primary-foreground: 150 30% 5%;
+    --secondary: 160 70% 35%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 150 15% 15%;
+    --muted-foreground: 150 15% 45%;
+    --accent: 120 60% 50%;
+    --accent-foreground: 150 30% 5%;
+    --border: 150 15% 16%;
+    --input: 150 15% 12%;
+    --ring: 145 90% 45%;
+    --glow-primary: 0 0 20px hsla(145, 90%, 45%, 0.4);
+    --glow-secondary: 0 0 20px hsla(160, 70%, 35%, 0.35);
+    --card-glow: 0 0 25px hsla(145, 90%, 45%, 0.12);
+    --font-heading: 'Orbitron', monospace;
+    --font-body: 'Rajdhani', sans-serif;
+  }
+
+  /* Sunset Warm */
+  [data-theme="sunset"] {
+    --background: 25 30% 8%;
+    --foreground: 35 90% 92%;
+    --card: 25 25% 12%;
+    --card-foreground: 35 70% 88%;
+    --primary: 25 95% 55%;
+    --primary-foreground: 25 30% 5%;
+    --secondary: 350 80% 55%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 25 15% 18%;
+    --muted-foreground: 25 15% 50%;
+    --accent: 45 90% 55%;
+    --accent-foreground: 25 30% 8%;
+    --border: 25 15% 20%;
+    --input: 25 15% 14%;
+    --ring: 25 95% 55%;
+    --glow-primary: 0 0 20px hsla(25, 95%, 55%, 0.4);
+    --glow-secondary: 0 0 20px hsla(350, 80%, 55%, 0.35);
+    --card-glow: 0 0 25px hsla(25, 95%, 55%, 0.12);
+    --font-heading: 'Rajdhani', sans-serif;
+    --font-body: 'Rajdhani', sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer utilities {
+  .glow-primary {
+    box-shadow: var(--glow-primary);
+  }
+  .glow-secondary {
+    box-shadow: var(--glow-secondary);
+  }
+  .glow-card {
+    box-shadow: var(--card-glow);
+  }
+  .text-glow {
+    text-shadow: var(--glow-primary);
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted));
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+}
